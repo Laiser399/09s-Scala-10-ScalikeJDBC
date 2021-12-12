@@ -1,7 +1,6 @@
 package org.mai.stackoverflow
 
 import java.time.LocalDateTime
-
 import scala.xml.XML
 
 trait DataLoader {
@@ -32,7 +31,7 @@ trait DataLoader {
       User(
         (userRow \@ "Id").toInt,
         userRow \@ "DisplayName",
-        userRow \@ "location",
+        userRow \@ "Location",
         userRow \@ "AboutMe",
         matchInt(userRow \@ "Reputation"),
         matchInt(userRow \@ "Views"),
