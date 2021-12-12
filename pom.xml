@@ -27,7 +27,7 @@
 		
         <scalikejdbc.version>3.3.1</scalikejdbc.version>
 
-		<h2database.version>1.4.197</h2database.version>
+		<h2database.version>1.4.199</h2database.version>
 		
 		<exec.mainClass>org.mai.dep810.scala.stackoverflow.TestMain</exec.mainClass>
     </properties>	
@@ -79,6 +79,13 @@
 			<artifactId>logback-classic</artifactId>
 			<version>${logback-core.version}</version>
 		</dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.5.2</version>
+        </dependency>
     </dependencies>
 
     <build>
