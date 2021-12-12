@@ -2,7 +2,6 @@ package org.mai.stackoverflow
 
 object Logic {
 
-  //split entities by type
   def splitEntities(entities: Seq[Entity]): (Seq[User], Seq[Post], Seq[Comment]) = {
     entities.foldLeft((Seq[User](), Seq[Post](), Seq[Comment]())) { case((users, posts, comments), entity) =>
       entity match {
